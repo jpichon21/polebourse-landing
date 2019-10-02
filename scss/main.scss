@@ -1,0 +1,231 @@
+@import '_include-media.scss';
+@import 'breakpoints.scss';
+
+// COLORS
+$color-blue: #26343e;
+$color-gold: #c29f59;
+
+// FONTS
+
+@font-face {
+    font-family: 'Montserrat Subrayada Bold', sans-serif;
+    src: url('../fonts/Montserrat_Subrayada/MontserratSubrayada-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat_Subrayada/MontserratSubrayada-Bold.woff') format('woff'),
+         url('../fonts/Montserrat_Subrayada/MontserratSubrayada-Bold.ttf') format('ttf');
+}
+
+body, h1, h2, h3, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 15px;
+}
+
+footer p, footer li{
+    font-size: 12pt;
+}
+
+.gold{
+    color: $color-gold;
+}
+
+.blue{
+    color: $color-blue;
+}
+
+/// RESET
+
+html, body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+//Elements
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 200px;
+    z-index: 2;
+    i{
+        margin-left: 8px;
+    }
+}
+
+.goldBtn{
+    border: 1px solid $color-gold;
+    color: $color-gold;
+    background-color: white;
+}
+.goldBtn:hover, .goldBtn:active, .goldBtn:focus{
+    background-color: $color-gold;
+    color: white;
+    transition: 0.5s;
+}
+
+.blueBtn{
+    border: 1px solid $color-blue;
+    color: $color-blue;
+    background-color: white;
+}
+
+.blueBtn:hover, .blueBtn:active, .blueBtn:focus{
+    background-color: $color-blue;
+    color: white;
+    transition: 0.5s;
+}
+
+.whiteBtn{
+    background-color: $color-gold;
+    border: 1px solid white;
+    color:  white;
+}
+
+.whiteBtn:hover, .whiteBtn:active, .whiteBtn:focus{
+    background-color: white;
+    color: $color-gold;
+    transition: 0.5s;
+}
+
+.flexslider{
+    .flex-nav-prev, .flex-nav-next{
+        display: none;
+    }
+}
+
+//Page
+#section1{
+    z-index: 1;
+    min-height: 800px;
+    height: 46.8vw;
+    margin-top: -27px; //why?
+    background-color: lightgrey;
+    background-image: url('../img/main-background-image-crop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    #logo{
+        position: absolute;
+        top: 28px;
+        left: 38px;
+    }
+    h1{
+        margin-bottom: 42px;
+    }
+    .buttons{
+        margin-top: 70px;
+        .btn{
+            margin: 8px 18px;
+        }
+    }
+    .content{
+        max-width: 48%;
+        margin: 0 auto;
+        padding-top: 14%;
+        text-align: center;
+    }
+}
+
+#section2{
+    float: right;
+    background-color: $color-gold;
+    max-width: 50%;
+    z-index: 10;
+    .content{
+        padding: 4.5% 13.2%;
+    }
+    .content, .flexslider{
+        background-color: $color-gold;
+    }
+    .flexslider{
+        border: none;
+        margin-bottom: 6px;
+    }
+    .flex-control-paging li a.flex-active {
+        background: #ffffff;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    .flex-control-nav {
+        z-index: 1;
+        width: 50%;
+        position: absolute;
+        bottom: -40px;
+        right: -80px;
+    }
+
+    .flex-control-paging li a {
+        background: transparent;
+        border: 1px solid white;
+        cursor: pointer;
+        width: 7px;
+        height: 7px;
+    }
+    .flex-control-paging li a {
+        text-indent: 9000px;
+    }
+    color: white;
+}
+
+#section3{
+    z-index:2;
+    margin-top: -145px;
+    width: 59.1vw;
+    height: 37.5vw;
+    background-image:  url('../img/video-player.png');
+    background-color: $color-blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section4{
+    max-width: 71.3%;
+    float: right;
+    margin-top: -8.76%;
+    background-color: white;
+    //position: absolute;
+    //top: 131.8%;
+    right: 0;
+    .content{
+        padding: 7.97% 13.28%;
+        ul{
+            padding-left: 0px;
+        }
+        ul li{
+            list-style-type: none;
+            font-size: 14px;
+        }
+    }
+    .tagline{
+        font-family: 'Montserrat Subrayada Bold', sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $color-gold;
+        font-size: 14px;
+    }
+    .listIcons{
+        margin: 0 auto;
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 18px 36px;
+            width: 160px;
+            vertical-align: middle;
+            span{
+                display: inline-block;
+                font-weight: 600;
+            }
+        }
+    }
+}
