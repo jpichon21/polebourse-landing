@@ -28,41 +28,40 @@
         $(window).load(function () {
             $('#mainSlider').flexslider({
                 slideshow: true,
+                slideshowSpeed: 10000,
                 useCSS: false,
                 touch: true,
             })
         });
         $(document).ready(function () {
-            $('#next').on('click', function(){
-                    $('#mainSlider').flexslider('next');
-                    return false;
+            $('#next').click(function () {
+                $('#mainSlider').flexslider('next');
+                return false;
             })
         });
-
-
     </script>
 </head>
 
 <body>
     <div id="section1">
-        <div id="logo"><img src="img/LOGO_CAANJOUMAINE.png" width="110"></div>
+        <div id="logo"><a href="#"><img src="img/LOGO_CAANJOUMAINE.png" width="110"></a></div>
         <div class="content">
             <h1>Le Pôle Bourse, votre partenaire pour vos investissements en Bourse</h1>
             <p>Le Pöle Bourse par Crédit Agricole est un service d'expert formé et spécialisé dans l'analyse et l'étude
                 des marchés financiers européens. Ce servier par téléphone, vous permet d'être accompagné et informé
                 tout au long de l'année dans vos choix et analyses d'investissements à plus ou moins long terme. </p>
             <div class="buttons">
-                <a class="blueBtn btn">Découvrir le Pôle Bourse <i class="fas fa-long-arrow-alt-right"></i></a>
-                <a class="goldBtn btn">Souscrire en Agence <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="blueBtn btn">Découvrir le Pôle Bourse <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="goldBtn btn">Souscrire en Agence <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
         </div>
     </div>
 
     <div id="section3">
-            <div class="content">
-            </div>
+        <div class="content">
         </div>
-    
+    </div>
+
 
     <div id="section2">
         <div class="content">
@@ -117,13 +116,14 @@
             <span class="tagline">Présentation du service</span>
             <h1>Le Pôle Bourse</h1>
             <p>Le Pôle Bourse par Crédit Agricole Anjou Maine <b>est un service composé de spécialistes des marchés
-                financiers et des actions européennes.</b> Ce service par téléphone, vous permet de vous tenir informé tout
+                    financiers et des actions européennes.</b> Ce service par téléphone, vous permet de vous tenir
+                informé tout
                 au long de l’année sur l’évolution des marchés et les perspectives de croissance des actions suivies par
                 le bureau d’analyse indépendant Kepler-Cheuvreux. </p>
             <p>Les recommandations générales fournies par vos experts du Pôle Bourse s’appuient sur la recherche de
-               <b> Kepler Cheuvreux. Vous bénéficiez ainsi de l’analyse de plus de 200 sociétés européennes.</b></p>
+                <b> Kepler Cheuvreux. Vous bénéficiez ainsi de l’analyse de plus de 200 sociétés européennes.</b></p>
             <p><b>Les collaborateurs du Pôle Bourse pourront vous apporter toutes les informations nécessaires à votre
-                prise de décision d’investissement en toute autonomie sur les thématiques suivantes :</b> </p>
+                    prise de décision d’investissement en toute autonomie sur les thématiques suivantes :</b> </p>
             <ul>
                 <li>
                     • une recommandation générale sur la vente ou l’achat d’une action,
@@ -134,12 +134,93 @@
                 <li>• une sélection actualisée de secteurs porteurs et d’actions associées,</li>
             </ul>
             <ul class="listIcons">
-                <li><img src="img/icons/icon1.svg" width="96"><span class="gold">Des spécialistes des marchés financiers</span></li>
-                <li><img src="img/icons/icon2.svg" width="124" style="    margin-top: 9px; margin-bottom: -18px;"><span class="blue">Kepler Cheuvreux n°1 dans la recherche en Europe</span></li>
-                <li><img src="img/icons/icon3.svg" width="108"  style="    margin-top: 9px; margin-bottom: -18px;"><span class="gold">Des réponses à vos questions sur les titres</span></li>
+                <li><img src="img/icons/icon1.svg" width="96"><span class="gold">Des spécialistes des marchés
+                        financiers</span></li>
+                <li><img src="img/icons/icon2.svg" width="124" style="    margin-top: 9px; margin-bottom: -18px;"><span
+                        class="blue">Kepler Cheuvreux n°1 dans la recherche en Europe</span></li>
+                <li><img src="img/icons/icon3.svg" width="108" style="    margin-top: 9px; margin-bottom: -18px;"><span
+                        class="gold">Des réponses à vos questions sur les titres</span></li>
             </ul>
         </div>
     </div>
+
+    <div id="section5">
+        <div class="content">
+            <div id="infoTag">
+                <img src="img/info.png">
+            </div>
+            <p>Vos conseillers experts du Pôle Bourse sont à votre disposition du <b>lundi au vendredi de 8h30 à
+                    18h00</b> pour
+                répondre à l’ensemble de vos questions sur les marchés financiers ou quelques soit la thématiques.</p>
+            <p>
+                <b>Pour rappel :</b> Ce service basé en France est sousmis à un abonnement mensuel.
+            </p>
+        </div>
+    </div>
+
+    <div id="section6">
+        <div class="content">
+            <span>Important :</span>
+            <p>Investir sur les marchés financiers nécessite des connaissances préalables et une acceptation des risques qui y sont associés. Un capital investi dans des instruments financiers est soumis aux variations des marchés.<b>Votre capital n’étant pas garanti, vous êtes exposé à un risque de perte.</b> </p>
+            <p>Les opinions émises sur les marchés financiers et les perspectives d’évolution des cours de bourse ne proviennent pas des Caisses régionales de Crédit Agricole mais d’analystes financiers indépendants. <b>Elles ne constituent pas des recommandations personnalisées (ou des conseils)</b> et ne présentent pas de garantie de résultat car l’évolution des cours de bourse reste soumise aux aléas des marchés financiers.</p>
+        </div>
+    </div>
+
+
+    <div id="section7">
+        <div class="content">
+            <span class="tagline">Focus sur le broker</span>
+            <h1>Kepler Cheuvreux, n°1 des analystes et du courtage en action en Europe</h1>
+            <p><b>Kepler Cheuvreux leader européen du courtage en actions.
+                </b></p>
+            <p>Utilisée par plus de 1 200 clients institutionnels et plusieurs millions de clients particuliers à
+                travers l’Europe, la plateforme d’exécution des ordres de Kepler Cheuvreux couvre toutes les bourses
+                mondiales. </p>
+            <p>Avec 11 bureaux d’analyse en Europe et près de 110 analystes, Kepler Cheuvreux figure dans les tous
+                premiers rangs des classements sur la Recherche Actions (Palmarès EXTEL 2019)</p>
+            <p>Sur 120 actions françaises et 80 capitalisations européennes, les analystes de Kepler rédigent et mettent
+                à jour régulièrement des fiches valeurs incluant une description de la société, les chiffres et ratios
+                clés, des commentaires de marché, des recommandations et des objectifs de cours.</p>
+            <p>Ces analyses et cette expertise sont aujourd’hui mises à disposition des clients des Caisses régionales
+                du Crédit Agricole à travers le Pôle Bourse.</p>
+
+        </div>
+    </div>
+
+    <div id="section8">
+        <div class="content">
+            <h1>Une offre unique pour une multitude de services</h1>
+            <div id="priceTable">
+                <div id="title"><span class="tagline">Abonnement mensuel</span></div>
+                <div id="body">
+                    <p id="price">14,90€<span>/ par mois</span></p>
+                    <ul>
+                        <li>• Accès à des conseillers spécialisés</li>
+                        <li>•  Informations sur les secteurs porteurs et titres recommandés</li>
+                        <li>• Informations sur les actions suivies par le broker Kepler Cheuvreux</li>
+                        <li>• Informations sur les opérations sur titres émises par les sociétés suivies</li>
+                        <li>• Une ligne téléphonique dédiée pour faciliter vos demandes</li>
+                        <li>• Un point sur le contexte des marchés</li>
+                        <li>• Un rappel de la fiscalité des comptes supports</li>
+                    </ul>
+                    <a href="#" class="goldBtn btn">Souscrire en Agence <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="content">
+            <div id="footerLogo"><a href="#"><img src="img/LOGO_CAANJOUMAINE_BLANC.png" width="82"></a></div>
+            <p>Caisse Régionale de Crédit Agricole Mutuel de l’Anjou et du Maine, société coopérative à capital variable agréée en tant qu’établissement de crédit - Société de courtage d’assurances immatriculée au Registre des Intermédiaires en Assurance sous le n° 07 023 736 <br> - 414 993 998 RCS Le Mans - Siège social : 77 avenue Olivier Messiaen 72083 Le Mans Cedex 9</p>
+            <p>© Crédit photos : joeycheung / Vasyl / bagotaj / nd3000 - stock.adobe.com | careers.keplercheuvreux.com
+                </p>
+                <p>Version : Octobre 2019</p>
+        </div>
+    </footer>
+
+
 
 </body>
 
