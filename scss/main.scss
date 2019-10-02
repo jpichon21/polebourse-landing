@@ -142,6 +142,9 @@ html, body{
     background-color: $color-gold;
     max-width: 50%;
     z-index: 10;
+    margin-top: -29.87%;
+    //height: 578px;
+    height: 22vw;
     .content{
         padding: 4.5% 13.2%;
     }
@@ -180,7 +183,8 @@ html, body{
 
 #section3{
     z-index:2;
-    margin-top: -145px;
+    float: left;
+    margin-top: -8%;
     width: 59.1vw;
     height: 37.5vw;
     background-image:  url('../img/video-player.png');
@@ -192,10 +196,8 @@ html, body{
 #section4{
     max-width: 71.3%;
     float: right;
-    margin-top: -8.76%;
+    margin-top: -7.76%;
     background-color: white;
-    //position: absolute;
-    //top: 131.8%;
     right: 0;
     .content{
         padding: 7.97% 13.28%;
