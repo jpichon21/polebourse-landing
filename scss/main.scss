@@ -19,6 +19,9 @@ body, h1, h2, h3, p{
 
 h1{
     font-size: 40px;
+    @include media('<=small') {
+        font-size: 32px;
+    }
 }
 
 h2{
@@ -136,16 +139,31 @@ $section4-padding-y: 7.97%;
     background-image: url('../img/main-background-image-crop.png');
     background-size: cover;
     background-repeat: no-repeat;
+    @include media('<=tablet') {
+        background-position: center;
+        text-align: center;
+        height: auto;
+        margin-top: 0px;
+    }
     #logo{
         position: absolute;
         top: 28px;
         left: 38px;
+        @include media('<=tablet') {
+            position: relative;
+            left: 0px;
+            
+        }
     }
     h1{
         margin-bottom: 42px;
     }
     .buttons{
         margin-top: 70px;
+        @include media('<=tablet') {
+            margin-top: 36px;
+            margin-bottom: 36px;
+        }
         .btn{
             margin: 8px 18px;
         }
@@ -155,6 +173,11 @@ $section4-padding-y: 7.97%;
         margin: 0 auto;
         padding-top: 14%;
         text-align: center;
+        @include media('<=tablet') {
+            max-width: 100%;
+            padding: $section4-padding;
+            padding-top: 36px;
+        }
     }
 }
 
@@ -164,8 +187,15 @@ $section4-padding-y: 7.97%;
     max-width: 50%;
     z-index: 10;
     margin-top: -29.87%;
-    //height: 578px;
     height: 22vw;
+    @include media('<=tablet') {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        float: none;
+        height: auto;
+        margin-top: 0px;
+    }
     .content{
         padding: 4.5% 13.2%;
     }
@@ -175,6 +205,10 @@ $section4-padding-y: 7.97%;
     .flexslider{
         border: none;
         margin-bottom: 6px;
+        @include media('<=tablet') {
+            margin-bottom: 32px;
+        }
+
     }
     .flex-control-paging li a.flex-active {
         background: #ffffff;
@@ -187,6 +221,12 @@ $section4-padding-y: 7.97%;
         position: absolute;
         bottom: -40px;
         right: -80px;
+        @include media('<=tablet') {
+            position: relative;
+            width: 100%;
+            bottom: 0px;
+            right: 0px;
+        }
     }
 
     .flex-control-paging li a {
@@ -200,6 +240,14 @@ $section4-padding-y: 7.97%;
         text-indent: 9000px;
     }
     color: white;
+    .btn{
+        @include media('<=tablet') {
+            width: 132px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 32px;
+        }
+    }
 }
 
 #section3{
@@ -212,6 +260,14 @@ $section4-padding-y: 7.97%;
     background-color: $color-blue;
     background-size: cover;
     background-repeat: no-repeat;
+    @include media('<=tablet') {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        float: none;
+        width: 100%;
+        height: 248px;
+    }
 }
 
 #section4{
@@ -220,6 +276,13 @@ $section4-padding-y: 7.97%;
     margin-top: -7.76%;
     background-color: white;
     right: 0;
+    @include media('<=tablet') {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        float: none;
+        margin-top: 0px;
+    }
     .content{
         padding: $section4-padding;
         ul{
@@ -249,15 +312,28 @@ $section4-padding-y: 7.97%;
 #section5{
     width: calc(100% - 71.3%);
     float: left;
+    @include media('<=tablet') {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+    }
     .content{
         padding-left: 33%;
         padding-top: 18.55%;
+        @include media('<=tablet') {
+            padding: $section4-padding;
+        }
     }
     p{
         font-weight: 200;
     }
     #infoTag{
         margin-bottom: 46px;
+        @include media('<=tablet') {
+            text-align: center;
+        }
     }
 }
 
@@ -270,10 +346,26 @@ $section4-padding-y: 7.97%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    @include media('<=tablet') {
+        background-position: -1210px center;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+    }
     .content{
         span{
             font-weight: 600;
             text-decoration: underline;
+        }
+        @include media('<=tablet') {
+            padding: $section4-padding;
+            max-width: 100%;
+            //width: 75%;
+            position: relative;
+            display: block;
+            top: 37%;
         }
         background-color: $color-gold;
         color: white;
@@ -294,6 +386,14 @@ $section4-padding-y: 7.97%;
     float: right;
     margin-top: -70px;
     background-color: $color-blue;
+    @include media('<=tablet') {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 0px;
+        float: none;
+    }
     p, h1{
         color: white;
     }
@@ -308,6 +408,14 @@ $section4-padding-y: 7.97%;
     width: 76%;
     margin-top: -7.1%;
     float: right;
+    @include media('<=tablet') {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 0px;
+        float: none;
+    }
     .content{
         text-align: center;
         padding-top: 142px;
@@ -315,6 +423,10 @@ $section4-padding-y: 7.97%;
         max-width: 770px;
         margin: 0 auto;
         padding-right: 24vw;
+        @include media('<=tablet') {
+           padding: $section4-padding;
+           max-width: 100%;
+        }
         h1{
             margin-bottom: 48px;
         }
@@ -323,10 +435,18 @@ $section4-padding-y: 7.97%;
             border: 1px solid $color-blue;
             .btn{
                 margin-top: 32px;
+                @include media('<=tablet') {
+                    margin-top: 16px;
+                    margin-bottom: 32px;
+                }
             }
             ul{
                 text-align: left;
                 padding: 0px 90px;
+                @include media('<=tablet') {
+                    text-align: center;
+                    padding: 0px 12px;
+                 }
                 li{
                     list-style-type: none;
                     margin: 16px 0px;
@@ -344,6 +464,9 @@ $section4-padding-y: 7.97%;
                 font-size: 55px;
                 color: $color-gold;
                 font-weight: 800;
+                @include media('<=tablet') {
+                    font-size: 52px;
+                }
                 span{
                     font-size: 14px;
                     color: black;
@@ -366,6 +489,9 @@ footer{
     }
     .content{
         padding: 45px 165px;
+        @include media('<=tablet') {
+            padding: $section4-padding;
+        }
     }
     #footerLogo{
         text-align: center;
