@@ -38,6 +38,18 @@
                 $('#mainSlider').flexslider('next');
                 return false;
             })
+            //smooth scroll
+          /  $("a").click(function () {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    console.log();
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top}, 800, function () {
+                        // window.location.hash = hash;
+                    });
+                }
+            });
         });
     </script>
 </head>
@@ -51,7 +63,7 @@
                 des marchés financiers européens. Ce servier par téléphone, vous permet d'être accompagné et informé
                 tout au long de l'année dans vos choix et analyses d'investissements à plus ou moins long terme. </p>
             <div class="buttons">
-                <a href="#" class="blueBtn btn">Découvrir le Pôle Bourse <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#mainSlider" class="blueBtn btn">Découvrir le Pôle Bourse <i class="fas fa-long-arrow-alt-right"></i></a>
                 <a href="#" class="goldBtn btn">Souscrire en Agence <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
         </div>
@@ -161,8 +173,14 @@
     <div id="section6">
         <div class="content">
             <span>Important :</span>
-            <p>Investir sur les marchés financiers nécessite des connaissances préalables et une acceptation des risques qui y sont associés. Un capital investi dans des instruments financiers est soumis aux variations des marchés.<b>Votre capital n’étant pas garanti, vous êtes exposé à un risque de perte.</b> </p>
-            <p>Les opinions émises sur les marchés financiers et les perspectives d’évolution des cours de bourse ne proviennent pas des Caisses régionales de Crédit Agricole mais d’analystes financiers indépendants. <b>Elles ne constituent pas des recommandations personnalisées (ou des conseils)</b> et ne présentent pas de garantie de résultat car l’évolution des cours de bourse reste soumise aux aléas des marchés financiers.</p>
+            <p>Investir sur les marchés financiers nécessite des connaissances préalables et une acceptation des risques
+                qui y sont associés. Un capital investi dans des instruments financiers est soumis aux variations des
+                marchés.<b>Votre capital n’étant pas garanti, vous êtes exposé à un risque de perte.</b> </p>
+            <p>Les opinions émises sur les marchés financiers et les perspectives d’évolution des cours de bourse ne
+                proviennent pas des Caisses régionales de Crédit Agricole mais d’analystes financiers indépendants.
+                <b>Elles ne constituent pas des recommandations personnalisées (ou des conseils)</b> et ne présentent
+                pas de garantie de résultat car l’évolution des cours de bourse reste soumise aux aléas des marchés
+                financiers.</p>
         </div>
     </div>
 
@@ -196,7 +214,7 @@
                     <p id="price">14,90€<span>/ par mois</span></p>
                     <ul>
                         <li>• Accès à des conseillers spécialisés</li>
-                        <li>•  Informations sur les secteurs porteurs et titres recommandés</li>
+                        <li>• Informations sur les secteurs porteurs et titres recommandés</li>
                         <li>• Informations sur les actions suivies par le broker Kepler Cheuvreux</li>
                         <li>• Informations sur les opérations sur titres émises par les sociétés suivies</li>
                         <li>• Une ligne téléphonique dédiée pour faciliter vos demandes</li>
@@ -213,10 +231,13 @@
     <footer>
         <div class="content">
             <div id="footerLogo"><a href="#"><img src="img/LOGO_CAANJOUMAINE_BLANC.png" width="82"></a></div>
-            <p>Caisse Régionale de Crédit Agricole Mutuel de l’Anjou et du Maine, société coopérative à capital variable agréée en tant qu’établissement de crédit - Société de courtage d’assurances immatriculée au Registre des Intermédiaires en Assurance sous le n° 07 023 736 <br> - 414 993 998 RCS Le Mans - Siège social : 77 avenue Olivier Messiaen 72083 Le Mans Cedex 9</p>
+            <p>Caisse Régionale de Crédit Agricole Mutuel de l’Anjou et du Maine, société coopérative à capital variable
+                agréée en tant qu’établissement de crédit - Société de courtage d’assurances immatriculée au Registre
+                des Intermédiaires en Assurance sous le n° 07 023 736 <br> - 414 993 998 RCS Le Mans - Siège social : 77
+                avenue Olivier Messiaen 72083 Le Mans Cedex 9</p>
             <p>© Crédit photos : joeycheung / Vasyl / bagotaj / nd3000 - stock.adobe.com | careers.keplercheuvreux.com
-                </p>
-                <p>Version : Octobre 2019</p>
+            </p>
+            <p>Version : Octobre 2019</p>
         </div>
     </footer>
 
