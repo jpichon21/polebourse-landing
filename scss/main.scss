@@ -127,6 +127,11 @@ $section4-padding-y: 7.97%;
     .flex-nav-prev, .flex-nav-next{
         display: none;
     }
+    .slides{
+        @include media('<=xlarge') {
+            text-align: center;
+        }
+    }
 }
 
 //Page
@@ -139,7 +144,7 @@ $section4-padding-y: 7.97%;
     background-image: url('../img/main-background-image-crop.png');
     background-size: cover;
     background-repeat: no-repeat;
-    @include media('<=tablet') {
+    @include media('<=xlarge') {
         background-position: center;
         text-align: center;
         height: auto;
@@ -149,7 +154,7 @@ $section4-padding-y: 7.97%;
         position: absolute;
         top: 28px;
         left: 38px;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             position: relative;
             left: 0px;
             
@@ -160,7 +165,7 @@ $section4-padding-y: 7.97%;
     }
     .buttons{
         margin-top: 70px;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             margin-top: 36px;
             margin-bottom: 36px;
         }
@@ -173,7 +178,7 @@ $section4-padding-y: 7.97%;
         margin: 0 auto;
         padding-top: 14%;
         text-align: center;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             max-width: 100%;
             padding: $section4-padding;
             padding-top: 36px;
@@ -188,7 +193,8 @@ $section4-padding-y: 7.97%;
     z-index: 10;
     margin-top: -29.87%;
     height: 22vw;
-    @include media('<=tablet') {
+
+    @include media('<=xlarge') {
         position: relative;
         display: block;
         max-width: 100%;
@@ -198,6 +204,7 @@ $section4-padding-y: 7.97%;
     }
     .content{
         padding: 4.5% 13.2%;
+        z-index: 11;
     }
     .content, .flexslider{
         background-color: $color-gold;
@@ -205,7 +212,7 @@ $section4-padding-y: 7.97%;
     .flexslider{
         border: none;
         margin-bottom: 6px;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             margin-bottom: 32px;
         }
 
@@ -221,7 +228,7 @@ $section4-padding-y: 7.97%;
         position: absolute;
         bottom: -40px;
         right: -80px;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             position: relative;
             width: 100%;
             bottom: 0px;
@@ -241,7 +248,7 @@ $section4-padding-y: 7.97%;
     }
     color: white;
     .btn{
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             width: 132px;
             margin: 0 auto;
             display: block;
@@ -260,12 +267,15 @@ $section4-padding-y: 7.97%;
     background-color: $color-blue;
     background-size: cover;
     background-repeat: no-repeat;
-    @include media('<=tablet') {
+    @include media('<=xlarge') {
         position: relative;
         display: block;
         max-width: 100%;
         float: none;
         width: 100%;
+        height: 548px;
+    }
+    @include media('<=tablet') {
         height: 248px;
     }
 }
@@ -276,7 +286,7 @@ $section4-padding-y: 7.97%;
     margin-top: -7.76%;
     background-color: white;
     right: 0;
-    @include media('<=tablet') {
+    @include media('<=xlarge') {
         position: relative;
         display: block;
         max-width: 100%;
@@ -312,7 +322,7 @@ $section4-padding-y: 7.97%;
 #section5{
     width: calc(100% - 71.3%);
     float: left;
-    @include media('<=tablet') {
+    @include media('<=xlarge') {
         position: relative;
         display: block;
         max-width: 100%;
@@ -322,7 +332,7 @@ $section4-padding-y: 7.97%;
     .content{
         padding-left: 33%;
         padding-top: 18.55%;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             padding: $section4-padding;
         }
     }
@@ -331,7 +341,7 @@ $section4-padding-y: 7.97%;
     }
     #infoTag{
         margin-bottom: 46px;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             text-align: center;
         }
     }
@@ -346,7 +356,7 @@ $section4-padding-y: 7.97%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    @include media('<=tablet') {
+    @include media('<=xlarge') {
         background-position: -1210px center;
         position: relative;
         display: block;
@@ -355,11 +365,15 @@ $section4-padding-y: 7.97%;
         float: none;
     }
     .content{
+        z-index: 11;
         span{
             font-weight: 600;
             text-decoration: underline;
         }
-        @include media('<=tablet') {
+        @include media('<=large') {
+            max-width: 62%;
+        }
+        @include media('<=xlarge') {
             padding: $section4-padding;
             max-width: 100%;
             //width: 75%;
@@ -367,6 +381,7 @@ $section4-padding-y: 7.97%;
             display: block;
             top: 37%;
         }
+    
         background-color: $color-gold;
         color: white;
         padding-left: $section4-padding-x;
@@ -386,7 +401,7 @@ $section4-padding-y: 7.97%;
     float: right;
     margin-top: -70px;
     background-color: $color-blue;
-    @include media('<=tablet') {
+    @include media('<=xlarge') {
         position: relative;
         display: block;
         max-width: 100%;
@@ -408,7 +423,7 @@ $section4-padding-y: 7.97%;
     width: 76%;
     margin-top: -7.1%;
     float: right;
-    @include media('<=tablet') {
+    @include media('<=xlarge') {
         position: relative;
         display: block;
         max-width: 100%;
@@ -423,7 +438,7 @@ $section4-padding-y: 7.97%;
         max-width: 770px;
         margin: 0 auto;
         padding-right: 24vw;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
            padding: $section4-padding;
            max-width: 100%;
         }
@@ -435,7 +450,8 @@ $section4-padding-y: 7.97%;
             border: 1px solid $color-blue;
             .btn{
                 margin-top: 32px;
-                @include media('<=tablet') {
+                margin-bottom: 32px;
+                @include media('<=xlarge') {
                     margin-top: 16px;
                     margin-bottom: 32px;
                 }
@@ -443,7 +459,7 @@ $section4-padding-y: 7.97%;
             ul{
                 text-align: left;
                 padding: 0px 90px;
-                @include media('<=tablet') {
+                @include media('<=xlarge') {
                     text-align: center;
                     padding: 0px 12px;
                  }
@@ -464,7 +480,7 @@ $section4-padding-y: 7.97%;
                 font-size: 55px;
                 color: $color-gold;
                 font-weight: 800;
-                @include media('<=tablet') {
+                @include media('<=xlarge') {
                     font-size: 52px;
                 }
                 span{
@@ -489,7 +505,7 @@ footer{
     }
     .content{
         padding: 45px 165px;
-        @include media('<=tablet') {
+        @include media('<=xlarge') {
             padding: $section4-padding;
         }
     }
