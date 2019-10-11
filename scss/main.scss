@@ -193,7 +193,12 @@ $section4-padding-y: 7.97%;
     z-index: 10;
     margin-top: -29.87%;
     height: 22vw;
-
+    @include media ('<=xhybrid') {
+        margin-top: -31.87%;
+    }
+    @include media ('<=hybrid') {
+        margin-top: -34.87%;
+    }
     @include media('<=xlarge') {
         position: relative;
         display: block;
@@ -275,7 +280,7 @@ $section4-padding-y: 7.97%;
         width: 100%;
         height: 548px;
     }
-    @include media('<=tablet') {
+    @include media('<=small') {
         height: 248px;
     }
 }
@@ -376,12 +381,12 @@ $section4-padding-y: 7.97%;
         @include media('<=xlarge') {
             padding: $section4-padding;
             max-width: 100%;
-            //width: 75%;
-            position: relative;
             display: block;
-            top: 37%;
         }
-    
+        @include media('<=xlarge') {
+            position: absolute;
+            bottom: 0px;
+        }
         background-color: $color-gold;
         color: white;
         padding-left: $section4-padding-x;
